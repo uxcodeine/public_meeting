@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Add</title> 
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+<link rel="stylesheet" href="themes/public_meeting.min.css" />
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.2.0.min.js"></script>
+    
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Public Meeting</h1>
+		<a href="options.html" data-icon="gear" data-transition="slide" data-rel="dialog" class="ui-btn-right">Options</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+        
+        <form action="brothers.html" method="post"> 
+           
+            <label for="brother_congregation">Congregation</label>
+            <select name="brother_congregation" id="brother_congregation">
+                <option value="Congo">Congo</option>
+            </select>
+            
+            <label for="brother_name">Name</label>
+            <input type="text" name="brother_name" id="brother_name" />
+                    
+                    
+            <fieldset data-role="controlgroup">
+                <legend>Serving as</legend>
+                <input type="radio" name="seringas-choice" id="seringas-choice-1" value="Elder" checked="checked" />
+                <label for="seringas-choice-1">Elder</label>
+        
+                <input type="radio" name="seringas-choice" id="seringas-choice-2" value="Ministerial Servant"  />
+                <label for="seringas-choice-2">Approved Ministerial Servant</label>
+        
+                <input type="radio" name="seringas-choice" id="seringas-choice-3" value="Ministerial Servant"  />
+                <label for="seringas-choice-3">Ministerial Servant</label>
+        
+                <input type="radio" name="seringas-choice" id="seringas-choice-4" value="N/A"  />
+                <label for="seringas-choice-4">Baptized Publisher</label>
+            </fieldset>      
+            
+            
+            <label><input type="checkbox" name="checkbox-0" />Serves as Public Talks Coordinator</label>
+            
+            <label for="brother_tel1">Tel 1</label>
+            <input type="tel" name="brother_tel1" id="brother_tel1" value=""  />
+            
+            <label for="brother_tel2">Tel 2</label>
+            <input type="tel" name="brother_tel2" id="brother_tel2" value=""  />
+            
+            <label for="brother_email">Email</label>
+            <input type="email" name="brother_email" id="brother_email" value=""  />
+            
+            <label for="brother-notes">Notes:</label>
+            	<textarea name="brother-notes" id="brother-notes">
+            </textarea>
+    
+            <input type="submit" data-inline="true" value="Save" />
+            <input type="button" data-inline="true" value="Cancel" />
+            <input type="reset" data-inline="true" value="Reset" />
+    
+            
+        </form> 
+	
+    
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="meetings.html"  data-icon="check">Meetings</a></li>
+                <li><a href="directory.html" data-icon="grid">Directory</a></li>
+            </ul>
+        </div>
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+</body>
+</html>

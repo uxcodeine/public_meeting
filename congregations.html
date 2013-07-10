@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Public Meeting</title> 
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+<link rel="stylesheet" href="themes/public_meeting.min.css" />
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.2.0.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Public Meeting</h1>
+		<a href="options.html" data-icon="gear" data-transition="slide" data-rel="dialog" class="ui-btn-right">Options</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+    
+        <ul data-role="listview" data-filter="true">
+            <li><a data-transition="slide" data-rel="dialog" href="details_congregation.html">Congo 1</a></li>
+            <li><a data-transition="slide" data-rel="dialog" href="details_congregation.html">Congo 2</a></li>
+            <li><a data-transition="slide" data-rel="dialog" href="details_congregation.html">Congo 3</a></li>
+        </ul>
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="meetings.html" data-icon="check">Meetings</a></li>
+                <li><a href="directory.html" class="ui-btn-active ui-state-persist" data-icon="grid">Directory</a></li>
+            </ul>
+        </div>
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+</body>
+</html>

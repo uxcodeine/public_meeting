@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Add</title> 
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+<link rel="stylesheet" href="themes/public_meeting.min.css" />
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.2.0.min.js"></script>
+    
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Public Meeting</h1>
+		<a href="options.html" data-icon="gear" data-transition="slide" data-rel="dialog" class="ui-btn-right">Options</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+        
+        <form action="congregations.html" method="post"> 
+        
+        
+            <label for="congregation_name">Name</label>
+            <textarea name="congregation_name" id="congregation_name">
+            </textarea>
+            
+            
+            <label for="brother_tel1">Meeting Day</label>
+            <select name="select-choice-day" id="select-choice-day">
+                <option value="1">Sunday</option>
+                <!-- etc. -->
+            </select>
+            
+            <label for="brother_tel1">Meeting Time</label>
+            <select name="select-choice-day" id="select-choice-day">
+                <option value="1">9:30 AM</option>
+                <!-- etc. -->
+            </select>
+            
+            <label for="congregation_name">Address</label>
+            <textarea name="congregation_name" id="congregation_name">
+            </textarea>
+            
+            <label for="brother_tel1">Kingdom Hall Tel</label>
+            <input type="tel" name="brother_tel1" id="brother_tel1" value=""  />
+                    
+            <label for="speaker-notes">Notes:</label>
+            	<textarea name="speaker-notes" id="speaker-notes">
+            </textarea>
+    
+            <input type="submit" data-inline="true" value="Save" />
+            <input type="button" data-inline="true" value="Cancel" />
+            <input type="reset" data-inline="true" value="Reset" />
+    
+            
+        </form> 
+	
+    
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="meetings.html" data-icon="check">Meetings</a></li>
+                <li><a href="directory.html" data-icon="grid">Directory</a></li>
+            </ul>
+        </div>
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Details</title> 
+	<link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+<link rel="stylesheet" href="themes/public_meeting.min.css" />
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.2.0.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Details</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+				<h3>First Last Name</h3>
+                <p class="ui-li-desc">Congregation Name</p>
+				<p class="ui-li-desc">Elder, MS (public talks coordinator)</p>
+				<p class="ui-li-desc">###-###-####</p>
+				<p class="ui-li-desc">###-###-####</p>
+				<p class="ui-li-desc">email@.com</p>
+				<p class="ui-li-desc">NOTES</p>
+                
+				<a href="add_brother.html" data-role="button" data-inline="true">Edit</a>
+                <a href="brother_delete.html" data-role="button" data-inline="true" data-rel="dialog">Delete</a>
+                <a href="brother_add_outline.html" data-role="button" data-inline="true">Add Outline</a>
+                
+                <h4>Outlines</h4>
+                <hr />
+                
+                <ul data-role="listview" data-filter="true">
+                    <li data-icon="minus"><a href="outline_delete.html" data-rel="dialog">1. TITLE</a></li>
+                    <li data-icon="minus"><a href="outline_delete.html" data-rel="dialog">2. TITLE</a></li>
+                    <li data-icon="minus"><a href="outline_delete.html" data-rel="dialog">3. TITLE</a></li>
+                </ul>
+                
+                
+                <hr />
+                
+                <h4>Past Visits</h4>
+                <ul data-divider-theme="a" data-theme="a" data-role="listview" class="ui-listview"> 
+                    <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d">Day of Week, Month Day, Year</li>
+                	<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+                    	<div class="ui-btn-inner ui-li">
+                    		<div class="ui-btn-text">
+                    				<p class="ui-li-desc"><strong>#. TITLE</strong></p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d">Day of Week, Month Day, Year</li>
+                	<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+                    	<div class="ui-btn-inner ui-li">
+                    		<div class="ui-btn-text">
+                    				<p class="ui-li-desc"><strong>#. TITLE</strong></p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d">Day of Week, Month Day, Year</li>
+                	<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d">
+                    	<div class="ui-btn-inner ui-li">
+                    		<div class="ui-btn-text">
+                    				<p class="ui-li-desc"><strong>#. TITLE</strong></p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+                
+    
+                
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>&nbsp;</h4>
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+</body>
+</html>
