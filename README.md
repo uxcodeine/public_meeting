@@ -1,7 +1,7 @@
 public_meeting
 ==============
 
-Public Meeting App
+Public Meeting scheduling App
 
 ### Install mongodb
         npm install mongodb
